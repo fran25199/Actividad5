@@ -1,1 +1,62 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: rgb(248, 255, 223);
+    font-family: 'calibri', Helvetica, Arial, sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: 'calibri', Helvetica, Arial, sans-serif;
+    position:absolute;
+    text-align: initial;
+    color: #aaa; /* Opcional: color del texto del placeholder, ajusta según sea necesario */
+}
+
+.card-noticia {
+    display: flex;
+    max-height: 1000px;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: transpareant;
+    border: 2px solid grey;
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    /* Permite que la tarjeta crezca según su contenido */
+}
+
+.noticia-titulo{
+    margin:0px;
+    padding: 0px;
+}
+.noticia-imagen{
+    padding: 5px 0px 10px 0px;
+    object-fit: cover;
+  
+}
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.noticia-fecha{
+    padding: 5px 0px 5px 0px;
+    font-size: 10px;
+
+}
+.noticia-noticia{
+    padding-bottom: 10px;
+    overflow-X: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.noticia-noticia p {
+    padding-top: 5px;
+    line-height: 1; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    text-align: justify;
+}
+
+

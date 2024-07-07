@@ -1,0 +1,25 @@
+<div class="contenido">
+<div class="formulario">
+  <div>
+    <label for="titulo">Titulo</label>
+    <input type="titulo" placeholder="Escribe el titulo" [(ngModel)]="newNoticia.titulo" />
+  </div>
+  <div>
+    <label for="foto-URL">Foto</label>
+    <input type="foto" placeholder="Engancha la URL de tu foto" [(ngModel)]="newNoticia.url" />
+  </div>
+  <div>
+    <label for="fecha">Fecha</label>
+    <input type="fecha" placeholder="Escribe la fecha" [(ngModel)]="newNoticia.fecha" />
+  </div>
+  <div>
+    <label for="noticia"></label>
+    <textarea class="inputNoticia" type="noticia" placeholder="Escribe aquí tu noticia..." [(ngModel)]="newNoticia.noticia" ></textarea>
+  </div>
+  <button (click)="guardarNoticia()">Publicar</button>
+  <div class="alerta" [innerHTML]="alertaCampos">
+  </div>
+</div>
+<div class="blog" [innerHTML]="publicarNoticia()">
+</div>
+</div>
